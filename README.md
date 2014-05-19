@@ -2,13 +2,11 @@
 
 [![Build Status](https://travis-ci.org/DefinitelyTyped/demo-typescript-node-minimal.svg?branch=source)](https://travis-ci.org/DefinitelyTyped/demo-typescript-node-minimal)
 
-> Minimal demo showing TypeScript use in node.js
-
-This demo shows the essentials for using node.js modules using TypeScript.
+> Minimal demo showing how to use TypeScript with node.js/npm modules 
 
 In the minimalistic example app we use the [xregexp](https://www.npmjs.org/package/xregexp) module to execute a simple RegExp on a string an log the output, and a local modules to show relative imports.
 
-This is a very simple example, just to show it actually works.
+This is a very simple example to show the essentials.
 
 The typings are from [DefinitelyTyped](https://github.com/borisyankov/DefinitelyTyped).
 
@@ -46,7 +44,7 @@ npm install xregexp --save
 
 This will create the `node_modules` and add the `xregexp` package. If you look into the `node_modules/xregexp` folder you see a lot of stuff, but we don't have to be aware of any of that:
 
-The magic happens when Node.js loads a module: it will scan the `node_modules` folder and find the `xregexp` folder. In the `package.json` it will see the element `"main": "./xregexp-all.js"`. 
+The magic happens when node loads a module: it will scan the `node_modules` folder and find the `xregexp` folder. In the `package.json` it will see the element `"main": "./xregexp-all.js"`. 
 
 This tells node that the `xregexp` module uses that file as main-entry point. This also means you don't have to look into the folder as module resolution is all automated. 
 
@@ -78,7 +76,7 @@ This will import our own TypeScript module. When we compile the `index.ts` the c
 
 We will compile `index.ts` to `index.js` Every file it `imports` automatically gets compiled to it's own module too.
 
-Because we're on node.js and using `import` we will generate CommonJS modules:
+Because we're on node and using `import` we will generate CommonJS modules:
 
 ````
 tsc index.ts --module commonjs
