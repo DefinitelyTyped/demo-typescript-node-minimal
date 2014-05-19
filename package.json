@@ -5,7 +5,7 @@
   "description": "Minimal demo showing TypeScript use in node.js",
   "main": "index.js",
   "scripts": {
-    "test": "tsc index.ts --module commonjs"
+    "test": "tsc index.ts --module commonjs & node ./index.js"
   },
   "keywords": [
     "typescript",
