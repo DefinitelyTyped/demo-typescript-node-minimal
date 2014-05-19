@@ -1,6 +1,6 @@
 # demo-typescript-node-minimal 
 
-[![Build Status](https://travis-ci.org/DefinitelyTyped/demo-typescript-node-minimal.svg?branch=source)](https://travis-ci.org/DefinitelyTyped/demo-typescript-node-minimal)
+[![Build Status](https://travis-ci.org/DefinitelyTyped/demo-typescript-node-minimal.svg)](https://travis-ci.org/DefinitelyTyped/demo-typescript-node-minimal)
 
 > Minimal demo showing how to use TypeScript with node.js/npm modules 
 
