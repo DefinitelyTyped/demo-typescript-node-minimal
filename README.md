@@ -60,16 +60,17 @@ This particular typing defines a `xregexp` external module (notice the name matc
 
 ### Check the 'index.ts' file
 
-Note the `/// <reference ..` tag, it is a relative path from this file to the typing `.d.ts`. It will add all it's content to the compilers namespace but not do anything on itself.
+Note the `/// <reference ..` tag, it is a relative path from this file to the typing `.d.ts`. It will add all it's content to the compilers namespace but not do anything on its own.
 
 Note the `import x = require('xregexp')`. This serves two purposes:
 
 1. At compile time TypeScript will use it to attach type information, it expects to have type declaration for a `xregexp` module (this is why we had the reference mentioned above).
+2
 1. At runtime it becomes the actual module import, it will use node's standard `require` system to get the `xregexp` module from the `node_modules` folder.
 
 Note the `import g = require('./lib/greeter');`
 
-This will import our own TypeScript module. When we compile the `index.ts` the compiler will also compiler this sub module to it's own JavaScript file. 
+This will import our own TypeScript module. When we compile the `index.ts` the compiler will also compile this sub module to it's own JavaScript file. 
 
 
 ### Compile the 'index.ts' file
