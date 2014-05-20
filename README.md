@@ -4,7 +4,7 @@
 
 > Minimal demo showing how to use TypeScript with node.js/npm modules 
 
-In the minimalistic example app we use the [xregexp](https://www.npmjs.org/package/xregexp) module to execute a simple RegExp on a string an log the output, and a local modules to show relative imports.
+In the minimalistic example app we use the [xregexp](https://www.npmjs.org/package/xregexp) module to execute a simple RegExp on a string an log the output, and a local module to show relative imports.
 
 This is a very simple example to show the essentials.
 
